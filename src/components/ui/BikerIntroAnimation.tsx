@@ -255,10 +255,13 @@ export function BikerIntroAnimation({ onComplete }: { onComplete: () => void }) 
         className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-brand-blue/20 to-transparent pointer-events-none" />
 
       {/* Road */}
-      <motion.div initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.6, delay: 0.1 }}
-        style={{ transformOrigin: 'left center' }}
+      <motion.div
         className="absolute w-full h-px bg-gradient-to-r from-transparent via-brand-cyan/25 to-transparent"
-        style={{ bottom: '28%' }} />
+        style={{
+          transformOrigin: 'left center',
+          bottom: '28%',
+        }}
+      />  
 
       {/* Big centre glow (grows on brand phase) */}
       <motion.div
