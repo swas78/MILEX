@@ -8,9 +8,6 @@ if (typeof global !== 'undefined' && typeof global.localStorage !== 'undefined' 
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  experimental: {
-    instrumentationHook: true,
-  },
   images: {
     unoptimized: true,
   },
